@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kanban</title>
+  <link rel="stylesheet" href="estiloCrm.css" />
+</head>
+<body>
+  <!-- Barra de navegação à esquerda e divisor -->
+  <div class="side-nav">
+    <h3>CRMining</h3>
+    <ul>
+      <li><a href="indexCadastro.html">Registro de Lead</a></li>
+      <li><a href="indexCrm.html">CRM</a></li>
+    </ul>
+  </div>
+  <div class="resizer"></div>
+
+  <!-- Conteúdo principal -->
+  <div class="main-content">
+    <!-- Parte superior com botões -->
+    <div class="parte-cima">
+      <button id="delete-lead" class="btn">Excluir Lead</button>
+      <button id="add-column" class="btn">Adicionar Coluna</button>
+    </div>
+
+    <!-- Kanban com rolagem horizontal -->
+    <div class="kanban-container">
+      <div class="kanban">
+        <div class="column" contenteditable="true"><h4>Coluna 1</h4></div>
+        <div class="column" contenteditable="true"><h4>Coluna 2</h4></div>
+        <div class="column" contenteditable="true"><h4>Coluna 3</h4></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Lead</title>
+  <link rel="stylesheet" href="estiloCrm.css">
+</head>
+<body>
+
+   <!-- Barra de navegação à esquerda e divisor -->
+   <div class="side-nav">
+    <h3>CRMining</h3>
+    <ul>
+      <li><a href="indexCadastro.html">Registro de Lead</a></li>
+      <li><a href="indexCrm.html">CRM</a></li>
+    </ul>
+  </div>
+  <div class="resizer"></div>
+
+
+  <div class="container">
+    <h2>Cadastro de Lead</h2>
+
+    
+    <form id="lead-form">
+      <div class="form-group">
+        <label for="company-name">Nome da Empresa:</label>
+        <input type="text" id="company-name" name="company-name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="ore-type">Minério Pretendido:</label>
+        <select id="ore-type" name="ore-type" required>
+          <option value="">Selecione...</option>
+          <option value="ferro">Ferro</option>
+          <option value="ouro">Ouro</option>
+          <option value="bauxita">Bauxita</option>
+          <option value="manganes">Manganês</option>
+          <option value="outros">Outros</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="company-type">Tipo de Empresa:</label>
+        <select id="company-type" name="company-type" required>
+          <option value="">Selecione...</option>
+          <option value="extracao">Extração</option>
+          <option value="exploracao">Exploração</option>
+          <option value="comercializacao">Comercialização</option>
+          <option value="investimento">Investimento</option>
+          <option value="outro">Outro</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="interest-level">Nível de Interesse:</label>
+        <select id="interest-level" name="interest-level" required>
+          <option value="">Selecione...</option>
+          <option value="alto">Alto</option>
+          <option value="medio">Médio</option>
+          <option value="baixo">Baixo</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="contact-person">Nome do Responsável:</label>
+        <input type="text" id="contact-person" name="contact-person" required>
+      </div>
+
+      <div class="form-group">
+        <label for="contact-email">Email de Contato:</label>
+        <input type="email" id="contact-email" name="contact-email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="contact-phone">Telefone de Contato:</label>
+        <input type="tel" id="contact-phone" name="contact-phone" required>
+      </div>
+
+      <div class="form-group">
+        <label for="observations">Observações:</label>
+        <textarea id="observations" name="observations" rows="4" placeholder="Digite informações adicionais..."></textarea>
+      </div>
+
+      <button type="submit" class="btn">Registrar Lead</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
